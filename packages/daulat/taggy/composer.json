@@ -1,0 +1,20 @@
+{
+    "name": "daulat/taggy",
+    "description": "An Elequent tagging package for laravel",
+    "authors": [
+        {
+            "name": "daulat",
+            "email": "kumar.daulat.07@gmail.com"
+        }
+    ],
+    "autoload" :{
+    	"psr-4":{
+    		"Daulat\\Taggy\\":"src"
+    	}
+    },
+    "require": {
+    	"php" : ">=5.5.0",
+    	"illuminate/database" :">=5.0",
+    	"illuminate/support" :">=5.0"
+    }
+}
