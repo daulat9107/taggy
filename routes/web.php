@@ -12,9 +12,13 @@
 */
 use App\Lesson;
 use App\Topic;
+use Daulat\Taggy\Models\Tag;
 Route::get('/', function () {
 	
-  $lesson=Lesson::find(1);
-  $tag=\Daulat\Taggy\Models\Tag::where('slug','orange')->first();
-  $lesson->tags()->attach($tag);
+  $tags= Tag::usedGte(1);
+
+  dd($tags->get());
+
+
+
 });
